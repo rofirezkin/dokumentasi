@@ -1,0 +1,6 @@
+untuk maps
+1. tool box gmap harus di masukan ke tampilan
+2. cara kedua kita bisa salin di display lain
+3. reference gunakan
+4. gunakan using
+5. salin kode yang berhubungan dengan maps , sesuaikan sampai tidak ada yang eror

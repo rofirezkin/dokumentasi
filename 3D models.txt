@@ -1,0 +1,7 @@
+1. untuk 3d model , salin 3d model 
+2. kasih references 
+3. kasih kode yang berhubungan 
+4.gunakan using yang sesuai 
+5.kasih stripmenu di display
+5. ketik yang sesuai dengan display
+running

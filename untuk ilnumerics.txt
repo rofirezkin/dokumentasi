@@ -1,0 +1,6 @@
+1.untuk memasuki ke ilnumeric, kita harus isi lisensi dan masukan lisesnsi di visual
+1. gunakan using ilnumeric
+3. salin grapich ilnumeric yang ada di display lain
+4. salin kode yang berhubungan dengan ilnumeric
+5. kasih reference
+

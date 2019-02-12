@@ -1,0 +1,42 @@
+pertama kita buat label ,
+combobox
+dan yang paling penting adalah di toolbox di  general klik kanan lalu chose item 
+klik browse, cari grafik zedgraph di file zedgraph dan klik, zedgraph dll, kecuali zedgraph web
+setelah itu select , sesudah itu klik oke
+maka zedgraph akan tampil 
+di dalam combobox kita harus mencari dropdown di properties dan klik , lalu akan keluar kodingan setelah itu copy paste dari kodingan yang lain
+jangan lupa masukan library di atas yang windows form ke kodingan kalian
+tambahkan class juga, salin dari class rof, 
+cara menambah class klik di windows form milik rof , maka klik  add , pilih class , klik class , setelah itu masukan kodingan ke dalam nya
+klik setelah itu harus mengklik form1 dan masukan kodingan yang sama seperti rof
+
+
+masuk avionik 
+
+klik kanan pada nama gui di kolom Solution Explorer
+pilih add -> new folder -> beri nama folder dengan nama control
+lalu klik kanan pada folder control -> add ->Existing Item -> cari folder tes dan ctrl+a kecuali resource1, lalu klik add
+klik kanan pada folder control -> add -> New Item -> cari folder resource yang berisi gambar avionik ctrl+a lalu klik add
+runing program terlebih dahulu 
+setelah di runing, close program
+
+1. altitude_meter.cs = GUI_PAYLOAD.tes diganti namaGUI.control
+2. artifical_horizon.cs = GUI_PAYLOAD.tes diganti namaGUI.control
+3. gps_indicator.cs = GUI_PAYLOAD.tes diganti namaGUI.control
+4. heading_indicator.cs = GUI_PAYLOAD.tes diganti namaGUI.control
+5. indicator_lamp.cs = GUI_PAYLOAD.tes diganti namaGUI.control
+6. instrumenControl.cs = GUI_PAYLOAD diganti namaGUI
+7. motor_controls.cs = GUI_PAYLOAD.tes diganti namaGUI.control
+8. rc_expo_control.cs = GUI_PAYLOAD.tes diganti namaGUI.control
+9. rc_input_control.cs = GUI_PAYLOAD.tes diganti namaGUI.control
+10. throttle_expo_control.cs = GUI_PAYLOAD.tes diganti namaGUI.control
+11. turncoordinatorinstrumencontrol.cs = GUI_PAYLOAD.tes diganti namaGUI.control dan GUI_PAYLOAD diganti namaGUI
+12. vertical_speed_meter.cs = GUI_PAYLOAD.tes diganti namaGUI.control
+13. VerticalSpeedIndicatorInstrumenControl.cs = GUI_PAYLOAD.tes diganti namaGUI.control dan GUI_PAYLOAD diganti namaGUI
+14. dan resources yang otomatis ada di folder control kita harus samakan resources nya yang ada di kodingan
+jangan sampe ada yang merah , jika merah berarti belum sama dengan resources nya
+jika sudah maka masuk ke form1.cs[Design] 
+klik file -> Save All
+runing program
+close program
+drag yang ada di toolbox

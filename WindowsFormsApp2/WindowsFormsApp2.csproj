@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C923B322-AFA0-4179-A8D9-E50A26889979}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp2</RootNamespace>
+    <AssemblyName>WindowsFormsApp2</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.isAnalogLibrary">
+      <HintPath>..\..\..\GCS APTRG\3Dmodel\Library\open\AxInterop.isAnalogLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.Core">
+      <HintPath>..\..\..\GCS APTRG\mapping\mapproject\mapproject\bin\Debug\GMap.NET.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsForms">
+      <HintPath>..\..\..\GCS APTRG\mapping\mapproject\mapproject\bin\Debug\GMap.NET.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsPresentation">
+      <HintPath>..\..\..\GCS APTRG\mapping\mapproject\mapproject\bin\Debug\GMap.NET.WindowsPresentation.dll</HintPath>
+    </Reference>
+    <Reference Include="ILNumerics.Computing, Version=5.1.0.0, Culture=neutral, PublicKeyToken=8d9bf50ef854734d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\ILNumerics\ILNumerics Ultimate VS\bin\ILNumerics.Computing.dll</HintPath>
+    </Reference>
+    <Reference Include="ILNumerics.Core, Version=5.1.0.0, Culture=neutral, PublicKeyToken=9651adc37f12bb00" />
+    <Reference Include="ILNumerics.Drawing, Version=5.1.0.0, Culture=neutral, PublicKeyToken=e22c8a010c3b081a, processorArchitecture=MSIL" />
+    <Reference Include="Interop.isAnalogLibrary">
+      <HintPath>..\..\..\GCS APTRG\3Dmodel\Library\open\Interop.isAnalogLibrary.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.SpeechLib">
+      <HintPath>..\..\..\GCS APTRG\3Dmodel\Library\open\Interop.SpeechLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="isAnalogLibrary">
+      <HintPath>..\..\..\GCS APTRG\3Dmodel\Library\open\isAnalogLibrary.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="OpenTK, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\GCS APTRG\3Dmodel\Library\open\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK.GLControl, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\GCS APTRG\3Dmodel\Library\open\OpenTK.GLControl.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpGL">
+      <HintPath>..\..\..\GCS APTRG\3Dmodel\Library\open\SharpGL.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpGL.SceneGraph">
+      <HintPath>..\..\..\GCS APTRG\3Dmodel\Library\open\SharpGL.SceneGraph.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpGL.Serialization">
+      <HintPath>..\..\..\GCS APTRG\3Dmodel\Library\open\SharpGL.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpGL.WinForms">
+      <HintPath>..\..\..\GCS APTRG\3Dmodel\Library\open\SharpGL.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpGL.WPF">
+      <HintPath>..\..\..\GCS APTRG\3Dmodel\Library\open\SharpGL.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph">
+      <HintPath>D:\GCS APTRG\zedgraph_dll_v515\zedgraph_dll_v515\zedgraph_dll_v5.1.5\ZedGraph.dll</HintPath>
+    </Reference>
+    <Reference Include="ZedGraph.Web">
+      <HintPath>D:\GCS APTRG\zedgraph_dll_v515\zedgraph_dll_v515\zedgraph_dll_v5.1.5\ZedGraph.Web.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="control\AirSpeedIndicatorInstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="control\AltimeterInstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="control\AttitudeIndicatorInstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="control\AvionicsInstrumentsControlsRessources.Designer.cs" />
+    <Compile Include="control\control.Designer.cs" />
+    <Compile Include="control\HeadingIndicatorInstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="control\InstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="control\Resource1.Designer.cs" />
+    <Compile Include="control\Resource11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="control\TurnCoordinatorInstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="control\VerticalSpeedIndicatorInstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ILNumerics_deploy\ILNHelper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="control\Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource11.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ILNumerics_deploy\ilnumerics.lic" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ILNumerics_deploy\ILNImports1.targets" />
+    <None Include="ILNumerics_deploy\ILNImports2.targets" />
+    <None Include="ILNumerics_deploy\ilnumerics.lic" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01_03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01_05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\airplane.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\airplane1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AirSpeedIndicator_Background.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AirSpeedNeedle.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Altimeter_Background.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\APM_airframes_001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\APM_airframes_002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bandeau_Dérouleur.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeadingIndicator_Aircraft.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeadingIndicator_Aircraft1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeadingIndicator_Background.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeadingWeel.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Horizon_Background.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Horizon_GroundSky.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Indicator_Background.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LongNeedleAltimeter.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maquette_Avion.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marker_heli.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marker_quadx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marker_tri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quadx.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmallNeedleAltimeter.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TurnCoordinator_Background.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TurnCoordinatorAircraft.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TurnCoordinatorBall.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TurnCoordinatorMarks.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VerticalSpeedIndicator_Background.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VerticalSpeedNeedle.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2019-01-23 at 23.07.16.jpeg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="ILNumerics_deploy\ILNImports1.targets" Condition="$(ILNLicCompile) != 'true'" />
+  <Import Project="ILNumerics_deploy\ILNImports2.targets" Condition="$(ILNLicCompile) == 'true'" />
+</Project>
